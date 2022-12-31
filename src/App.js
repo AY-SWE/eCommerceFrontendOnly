@@ -12,13 +12,14 @@ import "./App.css";
 */
 
 import React from 'react'
-import { Header,Hero } from "./components";
+import { Header,Hero, Slider } from "./components";
 
 const App = () => {
   return (
     <div className="app">
       <Header/>
       <Hero/>
+      <Slider/>
     </div>
   )
 }
