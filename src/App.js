@@ -12,7 +12,7 @@ import "./App.css";
 */
 
 import React from 'react'
-import { Header,Hero, Slider } from "./components";
+import { Header,Hero, Slider, Visual } from "./components";
 
 const App = () => {
   return (
@@ -20,6 +20,7 @@ const App = () => {
       <Header/>
       <Hero/>
       <Slider/>
+      <Visual/>
     </div>
   )
 }
