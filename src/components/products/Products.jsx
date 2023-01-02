@@ -5,6 +5,10 @@ import { ProductsData } from "../../data/products";
 import { useState } from "react";
 const Products = () => {
   const [menuProducts, setMenuProducts] = useState(ProductsData);
+  const filter =(type) =>{
+    setMenuProducts(ProductsData.filter((product)=>product.type === type))
+  }
+  
   return (
     <div className={css.container}>
       <div className={css.header}>
@@ -14,24 +18,24 @@ const Products = () => {
 
       <div className={css.products}>
         <ul className={css.menu}>
-          <li>All</li>
-          <li>Skin Care</li>
-          <li>Conditioners</li>
-          <li>Foundations</li>
+          <li onClick={()=>setMenuProducts(ProductsData)}>All</li>
+          <li onClick={()=> filter("skin care")}>Skin Care</li>
+          <li onClick={()=> filter("conditioner")}>Conditioners</li>
+          <li onClick={()=> filter("foundation")}>Foundations</li>
         </ul>
 
         <div className={css.list}>
           {menuProducts.map((product, i) => (
             <div className={css.product}>
-                <div className="left-s">
-                    <div className="name">
-                        <span>{product.name}</span>
-                        <span>{product.detail}</span>
-                    </div>
-                    <span>{product.price}</span>
-                    <div>Shop Now</div>
+              <div className="left-s">
+                <div className="name">
+                  <span>{product.name}</span>
+                  <span>{product.detail}</span>
                 </div>
-                <img src={product.img} alt="" className="img-p"/>
+                <span>{product.price}</span>
+                <div>Shop Now</div>
+              </div>
+              <img src={product.img} alt="" className="img-p" />
             </div>
           ))}
         </div>
