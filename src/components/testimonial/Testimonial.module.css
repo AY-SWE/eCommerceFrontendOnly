@@ -69,3 +69,17 @@
 .testimonial>img{
     width: 3rem;
 }
+
+.testimonial>span:nth-of-type(1){
+    align-items: center;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
+
+.testimonial hr{
+    height: 1px;
+    width: 80%;
+    background: rgb(198, 198, 198);
+    border: none;
+}
