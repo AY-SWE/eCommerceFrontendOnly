@@ -39,3 +39,33 @@
 .wrapper :nth-child(3){
     text-align: right;
 }
+
+.reviews{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.carousel{
+    width: 100%;
+}
+
+.tCarousel{
+    padding: 2rem;
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: white;
+    border-radius: 0.5rem;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow:  0rem 1rem 3rem -50px #050404;
+}
+
+.testimonial>img{
+    width: 3rem;
+}
