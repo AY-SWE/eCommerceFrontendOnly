@@ -12,7 +12,7 @@ import "./App.css";
 */
 
 import React from 'react'
-import { Header,Hero, Products, Slider, Visual } from "./components";
+import { Header,Hero, Products, Slider, Testimonial, Visual } from "./components";
 
 const App = () => {
   return (
@@ -22,6 +22,7 @@ const App = () => {
       <Slider/>
       <Visual/>
       <Products/>
+      <Testimonial/>
     </div>
   )
 }
