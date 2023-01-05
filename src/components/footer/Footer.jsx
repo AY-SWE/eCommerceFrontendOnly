@@ -68,6 +68,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      <div className={css.copyRight}>
+        <span>Copyright @2023 by AY Commer</span>
+        <span>All rights reserved</span>
+      </div>
     </div>
   );
 };
