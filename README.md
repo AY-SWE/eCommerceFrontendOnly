@@ -2,4 +2,4 @@
 
 ## A front-end only website 
 
-Technologies used: React.js, Javascript, HTML/CSS, css modules, Swiper.js
+Technologies used: React.js, Javascript, HTML/CSS, css modules, Swiper.js, Framer Motion library
